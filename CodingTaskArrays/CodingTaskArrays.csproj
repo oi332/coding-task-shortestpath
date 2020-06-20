@@ -8,5 +8,9 @@
     <ProjectReference Include="..\CodingTaskArrays.BLL\CodingTaskArrays.BLL.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Controllers\" />
+  </ItemGroup>
+
 
 </Project>
