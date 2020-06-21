@@ -6,6 +6,6 @@ namespace CodingTaskArrays.BLL.Validators.Models
 {
     public class Graph
     {
-        public Dictionary<int, List<int>> Relations { get; set; }
+        public Dictionary<int, HashSet<int>> Relations { get; set; }
     }
 }
