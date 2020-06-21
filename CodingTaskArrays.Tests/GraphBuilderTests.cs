@@ -7,6 +7,5 @@ namespace CodingTaskArrays.Tests
 {
     public class GraphBuilderTests
     {
-
     }
 }

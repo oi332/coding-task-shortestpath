@@ -3,7 +3,7 @@ using System.Collections.Specialized;
 using CodingTaskArrays.BLL.Models;
 using CodingTaskArrays.BLL.Validators.Models;
 
-namespace CodingTaskArrays.BLL.Validators
+namespace CodingTaskArrays.BLL
 {
     public static class ShortestPathFinder
     {
@@ -69,6 +69,6 @@ namespace CodingTaskArrays.BLL.Validators
             return shortestPath;
         }
 
-        
+
     }
 }

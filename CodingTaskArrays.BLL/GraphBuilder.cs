@@ -8,7 +8,7 @@ namespace CodingTaskArrays.BLL
 {
     public static class GraphBuilder
     {
-        public static Graph Build(NumbersArray numbersArray)
+        public static Graph Build(NumbersArrayDto numbersArray)
         {
             var arr = numbersArray.Numbers;
             var relations = new Dictionary<int, HashSet<int>>();

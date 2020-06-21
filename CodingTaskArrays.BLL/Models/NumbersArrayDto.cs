@@ -4,10 +4,9 @@ using System.Text;
 
 namespace CodingTaskArrays.BLL.Models
 {
-    public class NumbersArray
+    public class NumbersArrayDto
     {
         public List<int> Numbers { get; set; }
-        //public bool CanReachEndFromStart { get; set; }
-        //public List<int> ShortestPath { get; set; }
+        public List<int> ShortestPath { get; set; }
     }
 }
