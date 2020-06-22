@@ -6,6 +6,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\CodingTaskArrays.BLL\CodingTaskArrays.BLL.csproj" />
+    <ProjectReference Include="..\CodingTaskArrays.DAL\CodingTaskArrays.DAL.csproj" />
   </ItemGroup>
 
   <ItemGroup>

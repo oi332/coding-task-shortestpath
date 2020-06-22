@@ -8,6 +8,8 @@ namespace CodingTaskArrays.BLL.Services
 {
     public interface INumbersArrayService
     {
-         NumbersArrayDto Validate(NumbersArrayDto numbersArrayDto);
+        void Create(NumbersArrayDto numbersArrayDto);
+        IEnumerable<NumbersArrayDto> GetAll();
+        NumbersArrayDto GetById(int id);
     }
 }

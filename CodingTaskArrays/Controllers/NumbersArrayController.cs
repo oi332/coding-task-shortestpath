@@ -21,12 +21,33 @@ namespace CodingTaskArrays.Controllers
             _numbersArrayService = numbersArrayService;
         }
 
+        [HttpGet("{id}")]
+        public ActionResult Get(int id)
+        {
+            var numbersArrayDto = _numbersArrayService.GetById(id);
+
+            if (numbersArrayDto == null)
+            {
+                return NotFound();
+            }
+
+            return Ok(numbersArrayDto.ToResponse());
+        }
+
+        [HttpGet]
+        public ActionResult GetAll()
+        {
+            var numbersArrayDto = _numbersArrayService.GetAll();
+
+            return Ok(numbersArrayDto.ToResponse());
+        }
+
         [HttpPost]
         public ActionResult Post([FromBody] NumbersArrayRequest numbersArrayRequest)
         {
-            var numbersArrayDto = _numbersArrayService.Validate(numbersArrayRequest.ToDto());
-
-            return Ok(numbersArrayDto.ToResponse());
+            _numbersArrayService.Create(numbersArrayRequest.ToDto());
+            
+            return Ok();
         }
     }
 }

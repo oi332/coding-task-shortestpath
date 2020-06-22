@@ -1,11 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+using System.Text;
 
-namespace CodingTaskArrays.Models
+namespace CodingTaskArrays.DAL.Entities
 {
-    public class NumbersArrayResponse
+    public class NumbersArrayEntity
     {
         public int Id { get; set; }
         public List<int> Numbers { get; set; }
